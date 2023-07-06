@@ -7,12 +7,13 @@ int main() {
 
     int count = 0;
     for (int m = 1; m <= n; m++) {
+        // Перевірка, чи n % m дорівнює n / m
         if (n % m == n / m) {
-            count++;
+            count++; // Якщо умова виконується, збільшуємо лічильник
         }
     }
 
-    printf("Count of equal divi %d: %d\n", n, count);
+    printf("Count an equal divisions of number %d: %d\n", n, count);
 
     return 0;
 }
